@@ -18,5 +18,14 @@
         android:id="@+id/fragmentMenu"
         android:name="com.example.seemymessage.fragments.FragmentMenu"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentTextSettings"
+            app:destination="@id/fragmentTextSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTextSettings"
+        android:name="com.example.seemymessage.fragments.FragmentTextSettings"
+        android:label="fragment_text_settings"
+        tools:layout="@layout/fragment_text_settings" />
 </navigation>
